@@ -19,7 +19,8 @@ jobs:
 
     steps:
       - id: reponame
-        run: INPUT=${{ github.repository }} echo "::set-output name=reponame::(echo $INPUT | sed 's/\/docker-/\//')"
+        run: |
+          echo reponame=$(echo ${{ github.repository }} | sed 's/\/docker-/\//') >> "$GITHUB_OUTPUT"
 
       - name: Checkout repository
         uses: actions/checkout@v4
