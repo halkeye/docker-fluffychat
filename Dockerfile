@@ -1,4 +1,4 @@
-FROM ghcr.io/krille-chan/fluffychat:v1.18.0 as upstream
+FROM ghcr.io/krille-chan/fluffychat:v1.19.0 as upstream
 
 FROM docker.io/nginxinc/nginx-unprivileged:alpine
 USER root
