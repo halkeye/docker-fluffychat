@@ -1,4 +1,5 @@
-FROM ghcr.io/krille-chan/fluffychat:v1.20.0 as upstream
+ARG UPSTREAM_VERSION=v1.20.0
+FROM ghcr.io/krille-chan/fluffychat:${UPSTREAM_VERSION} as upstream
 
 FROM docker.io/nginxinc/nginx-unprivileged:alpine
 USER root
