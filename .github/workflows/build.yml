@@ -18,7 +18,7 @@ jobs:
       contents: write
       packages: write
     with:
-      upstream_version: "v1.21.1"
+      upstream_version: "v1.21.2"
       upstream_repo: "https://github.com/krille-chan/fluffychat"
       run_number: "${{ github.run_number }}"
       username: "${{ github.repository_owner }}"
